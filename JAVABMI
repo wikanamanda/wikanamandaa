@@ -1,0 +1,54 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javabmi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author wikan
+ */
+public class JAVABMI {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int berat;
+        double tinggi, BMI;
+        String nama;
+
+        System.out.print("Masukkan nama: ");
+        nama = in.nextLine();
+        System.out.print("Masukkan tinggi badan anda (dalam cm) = ");
+        tinggi = in.nextInt();
+        System.out.print("Masukkan berat badan anda (dalam kg) = ");
+        berat = in.nextInt();
+
+        tinggi = tinggi / 100;
+        BMI = berat / (tinggi * tinggi);
+
+        System.out.println("-----------------------");
+        System.out.println("Nama anda = " + nama);
+        System.out.println("Tinggi badan anda = " + tinggi);
+        System.out.println("BMI = \t " + BMI);
+        System.out.println("-----------------------");
+
+        if (BMI <= 18.5) {
+            System.out.println("Berat badan anda kurang");
+        } else if (BMI <= 22.9) {
+            System.out.println("Berat badan anda normal");
+        } else if (BMI <= 24.9) {
+            System.out.println("Berat badan anda berlebihan KURANGI MAKAN");
+        } else if (BMI <= 29.9) {
+            System.out.println("Anda mengalami obesitas tingkat 1");
+        } else if (BMI > 30) {
+            System.out.println("Anda obesitas kawan");
+        } else {
+            System.out.println("Maaf tidak ada");
+        }
+        System.out.println("-----------------------");
+
+    }
+
+}
