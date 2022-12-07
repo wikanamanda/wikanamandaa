@@ -1,0 +1,126 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplicationilai;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author wikan
+ */
+public class JavaApplicationilai {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("SELAMAT DATANG");
+        System.out.println("HASIL PENILAIAN KELAS");
+        System.out.println("===================================================");
+
+        System.out.println("Masukkan Nilai Pertama: ");
+        int pertama=input.nextInt();
+        System.out.println("Masukkan Nilai Kedua: ");
+        int kedua=input.nextInt();
+        System.out.println("Masukkan Nilai Ketiga: ");
+        int ketiga=input.nextInt();
+        System.out.println("Masukkan Nilai Keempat: ");
+        int keempat=input.nextInt();
+        System.out.println("Masukkan Nilai Kelima: ");
+        int kelima=input.nextInt();
+
+        System.out.println("===================================================");
+
+        System.out.println("HASIL PENILAIAN ANDA: ");
+
+        if(pertama<=60)
+        {
+            System.out.println("Nilai Pertama Anda: "+pertama+"// Maaf, Nilai Anda Kurang");
+        }else if (pertama >60 && pertama <=70)
+        {
+            System.out.println("Nilai Pertama Anda: "+pertama+"// Nilai Anda Cukup");
+        }else if (pertama>70 && pertama<=80)
+        {
+            System.out.println("Nilai Pertama Anda: "+pertama+"// Nilai Anda Baik");
+        }else if (pertama >80)
+        {
+            System.out.println("Nilai Pertama Anda: "+pertama+"// Nilai Anda Luar Biasa");
+        }else
+        {
+            System.out.println("INPUTAN ANDA ERROR");
+        }
+
+        if(kedua<=60)
+        {
+            System.out.println("Nilai Kedua Anda: "+kedua+"// Maaf, Nilai Anda Kurang");
+        }else if (kedua >60 && kedua <=70)
+        {
+            System.out.println("Nilai Kedua Anda: "+kedua+"// Nilai Anda Cukup");
+        }else if (kedua>70 && kedua<=80)
+        {
+            System.out.println("Nilai Kedua Anda: "+kedua+"// Nilai Anda Baik");
+        }else if (kedua >80)
+        {
+            System.out.println("Nilai Kedua Anda: "+kedua+"// Nilai Anda Luar Biasa");
+        }else
+        {
+            System.out.println("INPUTAN ANDA ERROR");
+        }
+
+        if(ketiga<=60)
+        {
+            System.out.println("Nilai Ketiga Anda: "+ketiga+"// Maaf, Nilai Anda Kurang");
+        }else if (ketiga >60 && ketiga <=70)
+        {
+            System.out.println("Nilai Ketiga Anda: "+ketiga+"// Nilai Anda Cukup");
+        }else if (ketiga>70 && ketiga<=80)
+        {
+            System.out.println("Nilai Ketiga Anda: "+ketiga+"// Nilai Anda Baik");
+        }else if (ketiga >80)
+        {
+            System.out.println("Nilai Ketiga Anda: "+ketiga+"// Nilai Anda Luar Biasa");
+        }else
+        {
+            System.out.println("INPUTAN ANDA ERROR");
+        }
+
+        if(keempat<=60)
+        {
+            System.out.println("Nilai Keempat Anda: "+keempat+"// Maaf, Nilai Anda Kurang");
+        }else if (keempat >60 && keempat <=70)
+        {
+            System.out.println("Nilai Keempat Anda: "+keempat+"// Nilai Anda Cukup");
+        }else if (keempat>70 && keempat<=80)
+        {
+            System.out.println("Nilai Keempat Anda: "+keempat+"// Nilai Anda Baik");
+        }else if (keempat >80)
+        {
+            System.out.println("Nilai Keempat Anda: "+keempat+"// Nilai Anda Luar Biasa");
+        }else
+        {
+            System.out.println("INPUTAN ANDA ERROR");
+        }
+
+        if(kelima<=60)
+        {
+            System.out.println("Nilai Kelima Anda: "+kelima+"// Maaf, Nilai Anda Kurang");
+        }else if (kelima >60 && kelima <=70)
+        {
+            System.out.println("Nilai Kelima Anda: "+kelima+"// Nilai Anda Cukup");
+        }else if (kelima>70 && kelima<=80)
+        {
+            System.out.println("Nilai Kelima Anda: "+kelima+"// Nilai Anda Baik");
+        }else if (kelima >80)
+        {
+            System.out.println("Nilai Kelima Anda: "+kelima+"// Nilai Anda Luar Biasa");
+        }else
+        {
+            System.out.println("INPUTAN ANDA ERROR");
+        }
+
+        System.out.println("===================================================");
+
+        System.out.println("RATA-RATA ANDA: "+(pertama+kedua+ketiga+keempat+kelima)/5);
+    }
+    
+}
